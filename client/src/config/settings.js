@@ -1,3 +1,12 @@
+/*
+ * @Descripttion : 
+ * @version      : 
+ * @Author       : duanhuan
+ * @Date         : 2020-11-09 08:52:11
+ * @LastEditors  : duanhuan
+ * @LastEditTime : 2020-11-09 09:06:03
+ * @FilePath     : /client/src/config/settings.js
+ */
 module.exports = {
   // 部署时的URL
   publicPath: "./",
@@ -10,7 +19,7 @@ module.exports = {
   // 进行编译的依赖
   transpileDependencies: ["vue-echarts", "resize-detector"],
   //标题 （包括初次加载雪花屏的标题 页面的标题 浏览器的标题）
-  title: "辐射学苑后台",
+  title: "后台管理系统",
   //简写
   abbreviation: "fsxy",
   //开发环境端口号

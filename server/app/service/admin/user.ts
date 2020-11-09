@@ -2,7 +2,7 @@
  * @Author: sky
  * @Date: 2019-08-27 21:45:14
  * @LastModifiedBy: sky
- * @LastEditTime: 2020-06-06 12:29:15
+ * @LastEditTime : 2020-11-09 09:05:07
  */
 import { Service } from 'egg';
 import { sign } from 'jsonwebtoken';
@@ -19,7 +19,9 @@ export default class AdminUserSerive extends Service {
         const { tokenExp, jwtSecret } = app.config;
         const user = await app.mysql.get('fs_admin', {
             username,
-            password: crypto.createHash('md5').update(password).digest('hex'),
+            // password: crypto.createHash('md5').update(password).digest('hex'),
+            // TODO：暂时开启
+            password,
         });
 
         if (user && user.id) {
